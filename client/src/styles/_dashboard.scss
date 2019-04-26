@@ -1,0 +1,107 @@
+
+/////////////////////////////// DASHBOARD STYLES
+.dashboard {
+  background: $quantum-gray;
+  overflow: scroll;
+
+  div.header {
+    background: white;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, .06);
+    padding: 0.5rem 2rem;
+  }
+
+  /////////////////// Content for the "home page"
+  div.home-content {
+    padding: 2rem;
+    display: flex; flex-flow: column; align-items: center; justify-content: center;
+    div.home-content-blocks {
+      display: flex; flex-flow: row; align-items: flex-start; justify-content: center;
+      width: 100%;
+    }
+    div.home-content-block {
+      background: white;
+      position: relative;
+      box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+      width: 50%;
+      padding: 1rem;
+      margin: 1rem;
+    }
+
+    ////// Details boxes
+    details {
+      background: white;
+      summary {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        cursor: pointer;
+        transition: all 250ms;
+        border-bottom: 0.5px solid $quantum-green;
+        &:before {
+          content: "\002B";
+          color: $quantum-green;
+          display: block;
+          float: left;
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin: 0 10px;
+          padding: 0;
+          text-align: center;
+          width: 20px;
+          transition: all 250ms;
+        }
+        &:focus {outline: none;}
+      }
+      summary::-webkit-details-marker {display: none;}
+      &[open] {
+        background: white;
+        summary:before {
+        content: "\2013";
+        transition: all 250ms;
+        }
+      }
+    }
+
+    //// Content for details boxes
+    details {
+      p {padding: 1rem;}
+      ul {
+        padding: 0 1.5rem;
+        li {
+          color: #2c2e2f;
+          margin: 0.5rem 0;
+          font-size: 1rem;
+          span.time-spent {color: $quantum-blue; font-weight: 700; margin-left: 5px;}
+          a {
+            color: $quantum-pink; text-decoration: none;
+            &:hover {color: $quantum-blue;}
+          }
+        }
+      }
+    }
+
+    .videoBlock {
+      h4 {color: $quantum-blue; text-align: center; font-size: 1.2rem; margin: 0 auto 0.5rem;}
+      p {margin: 1rem 0;}
+      div.videoWrapper {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+        width: 100% !important;
+        max-width: 100%;
+      }
+      iframe.bbVideoIframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+
+  }
+
+
+}

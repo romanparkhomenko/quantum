@@ -1,0 +1,59 @@
+
+/////////////////////////////// SIDEBAR STYLES
+.sidebar {
+  background: $quantum-blue;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  flex-flow: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  div.sidebar-header {
+    background: darken($quantum-blue, 10%);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    .sidebar-logo img {
+      display: block;
+      max-width: 125px;
+      margin: 0;
+    }
+    .header-close {display: none;}
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 0.5rem 0.25rem;
+      line-height: 1.3;
+      margin: 0;
+      i {
+        color: rgba(255,255,255,0.7);
+        font-size: 1.3rem;
+        margin-right: 0.75rem;
+      }
+      a, a:visited, a:focus, a:active {
+        color: rgba(255,255,255,0.7);
+        font-weight: 300;
+        text-decoration: none;
+        margin-left: 0.7rem;
+        text-transform: uppercase;
+        display: flex; align-items: center;
+      }
+      &:hover {
+        background: $quantum-green;
+      }
+    }
+    li.active {
+      background: black;
+      color: white;
+    }
+  }
+}
