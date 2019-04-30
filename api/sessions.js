@@ -15,6 +15,9 @@ router.get('/', function(req, res, next) {
 
     let queryParams = Object.entries(query);
 
+    console.log("queryParams.length = " + queryParams.length);
+    console.log (queryParams);
+
     // Loop through form results and generate URL with params.
     for (let i = 0; i < queryParams.length; i++) {
         if (queryParams[i][0].includes("predicateField")) {
@@ -24,20 +27,20 @@ router.get('/', function(req, res, next) {
             string += getOperatorType(queryParams[i][1]);
         }
         else if (queryParams[i][0].includes("inputFieldOne")) {
-            if (queryParams.length > 6) {
-                if (queryParams[i + 1][0].includes("inputFieldTwo")) {
-                    string += " " + queryParams[i][1] + " ";
-                } else {
-                    string += " " + queryParams[i][1] + " AND";
-                }
+            if (i + 1 < queryParams.length) {
+                string += " " + queryParams[i][1] + " AND";
             } else {
                 string += " " + queryParams[i][1] + " ";
             }
         }
         else if (queryParams[i][0].includes("inputFieldTwo")) {
-            string += "AND " + queryParams[i][1] + " ";
+            if (i + 1 < queryParams.length) {
+                string += " " + queryParams[i][1] + " AND";
+            } else {
+                string += " " + queryParams[i][1] + " ";
+            }
         } else {
-            string += "AND " + queryParams[i][1] + " ";
+            string += " " + queryParams[i][1] + " ";
         }
     }
 

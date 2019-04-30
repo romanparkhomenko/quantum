@@ -21,7 +21,7 @@ export default class Sidebar extends Component {
                         <ul>
                             <li><Link to='/'><i className="fas fa-home"></i><span>Home</span></Link></li>
                             <li><Link to='/sessions'><i className="fas fa-server"></i><span>Sessions</span></Link></li>
-                            <li><a target="_blank" rel="noopener noreferrer"  href="https://github.com/romanparkhomenko/"><i className="fab fa-github"></i><span>GitHub</span></a></li>
+                            <li><a target="_blank" rel="noopener noreferrer"  href="https://github.com/romanparkhomenko/quantum"><i className="fab fa-github"></i><span>GitHub</span></a></li>
                         </ul>
                     </div>
 

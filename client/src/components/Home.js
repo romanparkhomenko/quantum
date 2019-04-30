@@ -10,13 +10,13 @@ export default class Home extends Component {
 
                         <div className="home-content-block videoBlock">
                             <h4>Hello Quantum Metric!</h4>
-                            <div className="videoWrapper" data-videoid="17483091-dc48-6b21-193c-f54573d67115">
+                            <div className="videoWrapper" data-videoid="c4256928-e042-ae24-2926-0a44610c68f1">
                                 <iframe className="bbVideoIframe"
-                                src="https://bbemaildelivery.com/bbext/?p=vidEmbed&id=17483091-dc48-6b21-193c-f54573d67115"
+                                src="https://bbemaildelivery.com/bbext/?p=vidEmbed&id=c4256928-e042-ae24-2926-0a44610c68f1"
                                 frameBorder="0" scrolling="no" mozallowfullscreen webkitallowfullscreen
                                 allowFullScreen></iframe>
                             </div>
-                            <p>This was a really great experience, and I learned a few things. I really appreciate your time and consideration in this process, and hope to hear from you guys soon!</p>
+                            <p>This was a really great experience, and I learned a few things. I recorded a video here going through my assignment and some of my code above. I really appreciate your time and consideration in this process, and hope to hear from you guys soon!</p>
                         </div>
 
                         <div className="home-content-block challenges">
@@ -24,8 +24,8 @@ export default class Home extends Component {
                                 <summary><span>Challenges Of This Assignment</span></summary>
                                 <ul>
                                     <li>It's been a long time since I've set up an Express server. I went through a couple of boilerplates to make sure I was doing it in the best way.</li>
-                                    <li>I learned how to use Heroku for hosting, but got sidetracked in attempting to use their Postgre environment to potentially setup a test query. Unfortunately, I wasn't able to get it setup.</li>
-                                    <li>My algorithm for the Search Filter and generation of the query string probably has room for improvement. I initially oversimplified the assignment in my head, and started the project without a lot of alogorithm development. This resulted in me having to go back and think through it with a "rubber ducky" programming mindset and that helped drastically!</li>
+                                    <li>I learned how to use Heroku for hosting, but got sidetracked in attempting to use their PostgreSQL environment to potentially setup a test query. Unfortunately, I wasn't able to get it setup.</li>
+                                    <li>My algorithm for the Search Filter and generation of the query string probably has room for improvement. I initially oversimplified the assignment in my head, and started the project without a lot of algorithm development. This resulted in me having to go back and think through it with a "rubber ducky" programming mindset and that helped drastically!</li>
                                 </ul>
                             </details>
                         </div>
